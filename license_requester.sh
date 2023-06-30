@@ -33,7 +33,7 @@ function CheckCmd {
 function RequestLicense {
 
 	response=$(curl -X 'GET' \
-               		"https://hra2-api-dev.hylink.io/sdk_license?user_id=$1" \
+               		"https://hra2-api-beta.hylink.io/sdk_license?user_id=$1" \
                 	-H 'accept: application/json' \
 	        	-w "\n%{http_code}"
 		)
